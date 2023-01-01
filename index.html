@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>Encriptador de Texto - Alura Challenge I</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="input-container">
+          <header>
+            <img src="img/svg/Vector.svg" alt="Alura Logo" />
+            <h1><strong>Encriptador de texto</strong></h1>
+          </header>
+
+          <main>
+            <textarea placeholder="Ingresa el texto aquí" name="input"></textarea>
+            <small><img src="img/png/simbolo.png"/> Sólo letras minúsculas sin acento</small>
+            <div class="button-container">
+              <button id="encryptar">Encriptar</button>
+              <button id="desencryptar">Desencriptar</button>
+            </div>
+          </main>
+        </div>
+        <div class="output-container">
+          <img src="img/png/persona.png" alt="Buscando un texto" />
+          <textarea class="hidden" placeholder="Ingresa el texto aquí" name="input"></textarea>
+          <h2>Ningún mensaje fue encontrado</h2>
+          <button id="copy" class="hidden">Copiar</button>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </div>
+      <footer>
+        <small>
+          2022 &copy; Copyright Alura Latam. dessarrollado por
+          Adderly</a>
+        </small>
+      </footer>
+</body>
+</html>

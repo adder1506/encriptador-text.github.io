@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: 'Inter';
+  box-sizing: border-box;
+  transition: 0.25s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: fit-content;
+  background-color: #f3f5fc;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.main-container {
+  padding: 32px 32px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.input-container,
+.output-container {
+  margin: 32px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input-container header {
+  width: 100%;
+}
+
+.input-container main {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container main img {
+  width: 13px;
+}
+
+.input-container h1 {
+  margin: 32px auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.input-container textarea,
+.output-container textarea {
+  width: 90%;
+  height: 40vh;
+  margin: 32px auto;
+  align-self: center;
+  resize: none;
+  font-size: 28px;
+  color: #0a3871;
+  background-color: #f3f5fc;
+}
+
+.input-container textarea::placeholder,
+.output-container textarea::placeholder {
+  color: #0a3871;
+  opacity: 0.5;
+}
+
+.output-container textarea {
+  margin: 64px 16px;
+  background-color: #fff;
+}
+
+.input-container small {
+  color: #495057;
+}
+
+.input-container .button-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 32px;
+}
+
+#encryptar {
+    min-width: 270px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color:#fff;
+}
+
+#encryptar:hover {
+    color:#0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+#encryptar:active {
+    color:#fff;
+    background-color: #0A3871;
+}
+
+#desencryptar {
+    min-width: 270px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color:#0A3871;
+}
+
+#desencryptar:hover {
+    color:#fff;
+    background-color: #0A3871;
+}
+
+#desencryptar:active {
+    color:#0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+
+#copy {
+    min-width: 270px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color:#0A3871;
+}
+
+#copy:hover {
+    color:#fff;
+    background-color: #0A3871;
+}
+
+#copy:active {
+    color:#0A3871;
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.output-container {
+  max-inline-size: 340px;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.output-container img {
+  max-width: 100%;
+}
+
+.output-container h2,
+.output-container p {
+  margin: 32px;
+  text-align: center;
+}
+
+footer {
+  padding: 16px;
+  text-align: center;
+}
+
+@media (max-width: 1199.98px) {
+  .main-container {
+    padding: 16px;
+  }
+  button {
+    min-width: 150px;
+    margin-top: 5px;
+  
+  }
+  .input-container,
+  .output-container {
+    margin: 16px auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .input-container textarea,
+  .output-container textarea {
+    height: 25vh;
+  }
+  .input-container small {
+    text-align: center;
+  }
+  .input-container h1 {
+    margin: 8px auto;
+  }
+}
